@@ -3,12 +3,20 @@
 
 //1, Hide spoiler
 $(".spoiler span").hide();
+
 //2, Add a button
-$(".spoiler").append("<button>Reveal Spoiler!</button>");
+$(".spoiler").append("<button><h1>Reveal!</h1></button>");
+
+
 //3, When button pressed
+
+
+
+
 $("button").click(function(){
-  //3.1, Show spoiler next to the button clicked
-  $(this).prev().show();
-  //3.2, Get rid of button
+  $(this).prev().show(300);
   $(this).remove();
 });
+
+
+
